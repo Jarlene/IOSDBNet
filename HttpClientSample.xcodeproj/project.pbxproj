@@ -12,6 +12,8 @@
 		938816471DB9E04E00E36307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938816451DB9E04E00E36307 /* Main.storyboard */; };
 		938816491DB9E04E00E36307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938816481DB9E04E00E36307 /* Assets.xcassets */; };
 		9388164C1DB9E04E00E36307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388164A1DB9E04E00E36307 /* LaunchScreen.storyboard */; };
+		9388166B1DB9E12200E36307 /* NetJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9388166A1DB9E12200E36307 /* NetJson.framework */; };
+		9388166D1DB9F1A000E36307 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388166C1DB9F1A000E36307 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		938816481DB9E04E00E36307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9388164B1DB9E04E00E36307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9388164D1DB9E04F00E36307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9388166A1DB9E12200E36307 /* NetJson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetJson.framework; path = "../../../Library/Developer/Xcode/DerivedData/NetHttp-dditerhonayhqhgfhcjdtbtblasw/Build/Products/Debug-iphonesimulator/NetJson.framework"; sourceTree = "<group>"; };
+		9388166C1DB9F1A000E36307 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9388166B1DB9E12200E36307 /* NetJson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				938816401DB9E04E00E36307 /* HttpClientSample */,
 				9388163F1DB9E04E00E36307 /* Products */,
+				938816691DB9E12200E36307 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +66,17 @@
 				938816481DB9E04E00E36307 /* Assets.xcassets */,
 				9388164A1DB9E04E00E36307 /* LaunchScreen.storyboard */,
 				9388164D1DB9E04F00E36307 /* Info.plist */,
+				9388166C1DB9F1A000E36307 /* BaseViewController.swift */,
 			);
 			path = HttpClientSample;
+			sourceTree = "<group>";
+		};
+		938816691DB9E12200E36307 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9388166A1DB9E12200E36307 /* NetJson.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +153,7 @@
 			files = (
 				938816441DB9E04E00E36307 /* ViewController.swift in Sources */,
 				938816421DB9E04E00E36307 /* AppDelegate.swift in Sources */,
+				9388166D1DB9F1A000E36307 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +313,7 @@
 				938816521DB9E04F00E36307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

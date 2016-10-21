@@ -28,6 +28,11 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>App Transport SecuritySettings</key>
+	<dict>
+		<key>Allow Arbitray Loads</key>
+		<true/>
+	</dict>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

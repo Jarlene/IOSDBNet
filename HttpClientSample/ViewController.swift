@@ -26,27 +26,21 @@ class ViewController: BaseViewController {
         
     }
 
-    /**
-     * 从网络拉取数据，之后通知到主线程
-     * - Parameter request: 请求参数
-     * - Parameter resopnse: 回调闭包
-     * - Returns: void
-     */
-    func getData(request: Request?, resopnse: @escaping (Responese)-> Void )  {
-        if let request = request {
-            let httpClient = HttpClient();
-            httpClient.send(request: request, response: resopnse)
-        }
-    }
-
+   
     @IBAction func requestAction(_ sender: AnyObject) {
         let url = urlEdit.text
         let request = Request(url: url!, type: .Get)
-        getData(request: request, resopnse: { res in
-            if let result = res.result {
-                self.result.text =  result
+            .setType(value: "json")
+            .addParam(key: "plat", value: "android")
+            .addParam(key: "appKey", value: "23282028")
+            .addParam(key: "aa", value: "ffff")
+        getNetData(request: request, callback: { res in
+            if let result = res.toJson() {
+                self.result.text = result.dictionary?["appLinkConfig"]?.dictionaryObject?["taobao_scheme"] as? String
+                NSLog("\(result.debugDescription)")
+                return result as AnyObject
             }
- 
+            return  nil
         })
     }
 }

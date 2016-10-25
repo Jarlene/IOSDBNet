@@ -26,6 +26,7 @@
 		9388164D1DB9E04F00E36307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9388166A1DB9E12200E36307 /* NetJson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetJson.framework; path = "../../../Library/Developer/Xcode/DerivedData/NetHttp-dditerhonayhqhgfhcjdtbtblasw/Build/Products/Debug-iphonesimulator/NetJson.framework"; sourceTree = "<group>"; };
 		9388166C1DB9F1A000E36307 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		93A666281DBDEDF300E08A06 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		938816691DB9E12200E36307 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93A666281DBDEDF300E08A06 /* libsqlite3.tbd */,
 				9388166A1DB9E12200E36307 /* NetJson.framework */,
 			);
 			name = Frameworks;

@@ -29,7 +29,7 @@ class ViewController: BaseViewController {
    
     @IBAction func requestAction(_ sender: AnyObject) {
         let url = urlEdit.text
-        let request = Request(url: url!, type: .Get)
+        let request = SwiftRequest(url: url!, type: .Get)
             .setType(value: "json")
             .addParam(key: "plat", value: "android")
             .addParam(key: "appKey", value: "23282028")

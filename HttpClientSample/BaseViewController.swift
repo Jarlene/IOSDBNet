@@ -46,8 +46,7 @@ class BaseViewController: UIViewController, NotifyChangedListener {
      */
     func getNetData(request: SwiftRequest?, callback: @escaping (SwiftResponse)-> AnyObject? )  {
         if let request = request {
-            let httpClient = SwiftHttpClient.getInstance();
-            httpClient.send(request: request, response: callback)
+            SwiftHttpClient.send(request: request, response: callback)
         }
     }
     

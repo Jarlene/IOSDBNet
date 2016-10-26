@@ -46,6 +46,7 @@
                     <connections>
                         <outlet property="result" destination="zcL-ca-PWt" id="t8G-fZ-yKl"/>
                         <outlet property="semdButton" destination="Vuy-eQ-G00" id="w4i-2c-KBQ"/>
+                        <outlet property="sendBtn" destination="Vuy-eQ-G00" id="JRZ-No-RPe"/>
                         <outlet property="urlEdit" destination="oce-xZ-Ko9" id="Sfr-8A-POZ"/>
                     </connections>
                 </viewController>

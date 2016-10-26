@@ -41,7 +41,7 @@ class BaseViewController: UIViewController, NotifyChangedListener {
      * - Parameter resopnse: 回调闭包
      * - Returns: void
      */
-    func getNetData(request: Request?, callback: @escaping (Responese)-> AnyObject? )  {
+    func getNetData(request: Request?, callback: @escaping (Response)-> AnyObject? )  {
         if let request = request {
             let httpClient = HttpClient.getInstance();
             httpClient.send(request: request, response: callback)
@@ -55,7 +55,7 @@ class BaseViewController: UIViewController, NotifyChangedListener {
      * - Parameter callback: 获取数据的回调，可选函数类型
      * - Returns: void
      */
-    func getDataBase(uri: String, callback: @escaping (Responese)-> AnyObject??)  {
+    func getDataBase(uri: String, callback: @escaping (Response)-> AnyObject??)  {
         if !uri.isEmpty {
             
         }

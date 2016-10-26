@@ -12,8 +12,8 @@ import NetJson
 class ViewController: BaseViewController {
 
     @IBOutlet weak var urlEdit: UITextField!
-    @IBOutlet weak var semdButton: UIButton!
     @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var sendBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

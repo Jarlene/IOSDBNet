@@ -19,9 +19,11 @@ import NetJson
 class BaseViewController: UIViewController, NotifyChangedListener {
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        SwiftNetwork.getInstance().registerNetNotifyChanged(listener: self)
+        // 添加网络状态监听
+        SwiftNetwork.getInstance().registerNetChangeListener(listener: self)
     }
     
     
@@ -31,7 +33,8 @@ class BaseViewController: UIViewController, NotifyChangedListener {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        SwiftNetwork.getInstance().unregisterNetNotifyChanged(listener: self)
+        // 移除网络状态监听
+        SwiftNetwork.getInstance().unregisterNetChangeListener(listener: self)
     }
     
     
@@ -71,15 +74,7 @@ class BaseViewController: UIViewController, NotifyChangedListener {
         guard let netStatus = status else {
             return
         }
-        switch netStatus {
-        case .notReachable:
-            print("notReachable")
-        case .reachableViaWiFi:
-            print("reachableViaWiFi")
-        case .reachableViaWWAN:
-            print("reachableViaWWAN")
-        }
-        
+        print(netStatus.description)
     }
     
     

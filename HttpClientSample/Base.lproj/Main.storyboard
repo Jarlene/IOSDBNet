@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="请求"/>
                                 <connections>
-                                    <action selector="requestAction:" destination="BYZ-38-t0r" eventType="touchDown" id="Mx0-gr-nVZ"/>
+                                    <action selector="requestAction:" destination="BYZ-38-t0r" eventType="touchDown" id="GYi-UV-0TP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="😀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcL-ca-PWt">
@@ -45,7 +45,6 @@
                     </view>
                     <connections>
                         <outlet property="result" destination="zcL-ca-PWt" id="t8G-fZ-yKl"/>
-                        <outlet property="semdButton" destination="Vuy-eQ-G00" id="w4i-2c-KBQ"/>
                         <outlet property="sendBtn" destination="Vuy-eQ-G00" id="JRZ-No-RPe"/>
                         <outlet property="urlEdit" destination="oce-xZ-Ko9" id="Sfr-8A-POZ"/>
                     </connections>

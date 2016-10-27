@@ -34,6 +34,8 @@ class ViewController: BaseViewController {
             .addParam(key: "plat", value: "android")
             .addParam(key: "appKey", value: "23282028")
             .addParam(key: "aa", value: "ffff")
+        
+        
         getNetData(request: request, callback: { res in
             if let result = res.toJson() {
                 self.result.text = result.dictionary?["appLinkConfig"]?.dictionaryObject?["taobao_scheme"] as? String
@@ -43,5 +45,12 @@ class ViewController: BaseViewController {
             return  nil
         })
     }
+    
+    
+    override func notify(oldstatus: NetworkStatus?, newstatus: NetworkStatus?) {
+        super.notify(oldstatus: oldstatus, newstatus:newstatus)
+    }
+    
+    
 }
 

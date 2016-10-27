@@ -41,7 +41,7 @@ class BaseViewController: UIViewController, NotifyChangedListener {
     /**
      * 从网络拉取数据，之后通知到主线程
      * - Parameter request: 请求参数
-     * - Parameter resopnse: 回调闭包
+     * - Parameter resopnse: 回调闭包,是在主线程执行
      * - Returns: void
      */
     func getNetData(request: SwiftRequest?, callback: @escaping (SwiftResponse)-> AnyObject? )  {
@@ -54,7 +54,7 @@ class BaseViewController: UIViewController, NotifyChangedListener {
     /**
      * 从数据库获取数据
      * - Parameter uri: 指向数据库的uri
-     * - Parameter callback: 获取数据的回调，可选函数类型
+     * - Parameter callback: 获取数据的回调，可选函数类型，是在主线程执行
      * - Returns: void
      */
     func getDataBase(uri: String, callback: @escaping (SwiftResponse)-> AnyObject??)  {
@@ -69,11 +69,8 @@ class BaseViewController: UIViewController, NotifyChangedListener {
      * 网络状态改变监听
      * - Parameter status: NetworkStatus网络状态
      */
-    func notify(status: NetworkStatus?) {
-        guard let netStatus = status else {
-            return
-        }
-        print(netStatus.description)
+    func notify(oldstatus: NetworkStatus?, newstatus: NetworkStatus?) {
+        
     }
     
     
